@@ -173,6 +173,52 @@ li{
     width: 20%;
 }
 
+////////////////////////////
+
+.menu > li a[data-image="0"]:before {
+    display: block;
+    position: absolute;
+    content: "123";
+    height: 10px;
+    width: 0;
+    background: #ec4444;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+   background: green;
+    bottom: 0;
+}
+.menu > li a:after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #ec4444;
+    transition: width 0.3s ease-in-out;
+    left: 50%;
+    bottom: 0;
+}
+
+
+.menu > li a[ data-item="3" ]:hover:before , 
+.menu > li a[ data-item="-1" ]:hover:before  {
+    width: 0%;
+    left: 0%;
+}
+
+
+
+.menu > li a[ data-item="3" ]:hover:after ,
+.menu > li a[data-item="-1"]:hover:after{
+    width: 0%;
+    left: 0%;
+}
+
+/////////////////////////////
+
+
+
+
+
 .menu > li a[data-item="-1"],a[data-item="3"]:after:before
 {
 	 display: block;
